@@ -1,7 +1,9 @@
 "use client";
-import React from "react";
-import type { MenuProps } from "antd";
-import { Layout, Menu, theme } from "antd";
+import React, { useEffect } from "react";
+import { useParams } from "next/navigation";
+import { Layout, theme } from "antd";
+
+import SiderMenu from "@/components/SiderMenu";
 
 const { Content, Sider } = Layout;
 
@@ -17,13 +19,6 @@ const siderStyle: React.CSSProperties = {
   scrollbarGutter: "stable",
 };
 
-const items: MenuProps["items"] = [
-  {
-    key: "project_1",
-    label: "Project A",
-  },
-];
-
 export default function ProjectsLayout({
   children,
 }: {
@@ -33,10 +28,13 @@ export default function ProjectsLayout({
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
 
+  const { id } = useParams();
+  useEffect(() => {}, [id]);
+
   return (
     <Layout hasSider>
       <Sider style={siderStyle}>
-        <Menu theme="dark" mode="inline" items={items} />
+        <SiderMenu />
       </Sider>
       <Layout>
         <Content style={{ margin: "24px 16px 0", overflow: "initial" }}>
