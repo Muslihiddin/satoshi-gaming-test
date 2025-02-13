@@ -1,0 +1,20 @@
+[
+  {
+    "projectId": "project_a",
+    "projectName": "Project A",
+    "startDate": "2025-01-01",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique eum corrupti cumque sed optio dolores, nam commodi ipsum deleniti voluptate praesentium tempora architecto, impedit harum. Inventore corporis reiciendis odio.",
+    "endDate": "2025-12-31",
+    "projectManager": "John Doe",
+    "isFavorite": false
+  },
+  {
+    "projectId": "project_b",
+    "projectName": "Project B",
+    "startDate": "2025-01-01",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique eum corrupti cumque sed optio dolores, nam commodi ipsum deleniti voluptate praesentium tempora architecto, impedit harum. Inventore corporis reiciendis odio.",
+    "endDate": "2025-12-31",
+    "projectManager": "John Doe",
+    "isFavorite": true
+  }
+]
